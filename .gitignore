@@ -65,4 +65,4 @@ typings/
 !.vscode/launch.json 
 !.vscode/extensions.json 
 *.code-workspace
-*.DS_Store
+.DS_Store
