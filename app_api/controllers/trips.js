@@ -7,7 +7,7 @@ const Model = mongoose.model('trips');
 const tripsList = async (req, res) => {
   Model
       .find({}) // empty filter for all 
-      .exec((errr, trips) => {
+      .exec((err, trips) => {
             if (!trips) {
                   return res
                       .status(404)
