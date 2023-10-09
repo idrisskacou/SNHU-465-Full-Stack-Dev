@@ -15,10 +15,12 @@ import { TripDataService } from './services/trip-data.service';
   ],
   imports: [
     BrowserModule
-    HttpModule
+    HttpModule,
   ],
-  providers: [],
+  providers: [
+    TripDataService
+  ],
   bootstrap: [AppComponent]
-  TripDataService
+  
 })
 export class AppModule { }
