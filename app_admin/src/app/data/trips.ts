@@ -31,5 +31,5 @@ export const trips =
         "perPerson": "1999.00",
         "image": "reef3.jpg",
         "description": "<p> Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non. </p> <p> Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis. </p>"        
-    }
-]
+    },
+];

@@ -16,7 +16,7 @@ export class AddTripComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private tripService: TripDataService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.addForm = this.formBuilder.group({
@@ -31,16 +31,17 @@ export class AddTripComponent implements OnInit {
       description: ["", Validators.required],
     });
   }
+
   onSubmit() {
     this.submitted = true;
     if (this.addForm.valid) {
-      
       this.tripService.addTrip(this.addForm.value).then((data) => {
         console.log(data);
         this.router.navigate([""]);
       });
     }
   }
+
   // get the form short name to access the form fields
   get f() {
     return this.addForm.controls;
