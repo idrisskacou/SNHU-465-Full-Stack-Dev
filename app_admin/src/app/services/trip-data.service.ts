@@ -1,11 +1,11 @@
 import { Injectable } from "@angular/core";
 import { Http } from "@angular/http";
 
-import { Trip } from "../models/trips";
+import { Trip } from "../models/trip";
 
 @Injectable()
 export class TripDataService {
-  constructor(private http: Http) {}
+  constructor(private http: Http) { }
 
   private apiBaseUrl = "http://localhost:3000/api";
   private tripUrl = "${this.apiBaseUrl}trips/";

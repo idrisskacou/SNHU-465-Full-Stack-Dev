@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 // import { trips } from '../data/trips';
 import { TripDataService } from "../services/trip-data.service";
-import { Trip } from "../models/trips";
+import { Trip } from "../models/trip";
 
 @Component({
   selector: "app-trip-listing",
@@ -17,8 +17,9 @@ export class TripListingComponent implements OnInit {
   message: string;
   constructor(
     private tripDataService: TripDataService,
-    private router: Router
-    ) { }
+    private router: Router) { }
+
+
   private addTrip(): void {
     this.router.navigate(['add-trip']);
   }
@@ -27,8 +28,9 @@ export class TripListingComponent implements OnInit {
     console.log("Inside TripListingComponent#getTrips");
     this.message = "Searching for trips";
     this.tripDataService
-      .getTrips().then((foundTrips) => {
-        this.message = foundTrips.length > 0 ? "" : "No trips found";
+      .getTrips()
+      .then((foundTrips) => {
+        this.message = foundTrips.length > 0 ? '' : 'No trips found';
         this.trips = foundTrips;
       });
   }
