@@ -39,7 +39,7 @@ app.use('api', (req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
   res.header('Access-Control-Allow-Headers', 'Orgin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods','GET, POST, PUT, DELETE');
-  next();
+  // next();
 });
 
 app.use('/', indexRouter);
